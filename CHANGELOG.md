@@ -14,6 +14,7 @@ Initial public release.
 - Works on vertical videos and while paused, and on Bilibili tabs that were already open when the extension was installed.
 - **Interface language:** 15 languages — English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch, Русский, Português (Brasil), Italiano, Tiếng Việt, ไทย, Bahasa Indonesia and हिन्दी. It follows the browser language by default (regional variants map to the closest shipped locale); Settings has an "Interface language" choice (Follow browser, or any shipped language) that applies immediately to the settings page, the toolbar popup and in-page messages. The extension name and description that Chrome itself displays still follow the browser language.
 - Light and dark theme for the popup and settings page (follows the system).
+- **Microsoft Edge** (Chromium) is supported with the same package; the shortcuts button opens `edge://extensions/shortcuts` there.
 - Small footprint: runs only on `https://www.bilibili.com/*`, with the `storage`, `activeTab` and `scripting` permissions.
 
 ### Developer

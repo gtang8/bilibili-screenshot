@@ -69,7 +69,7 @@ document.getElementById("captureBtn").addEventListener("click", async () => {
 });
 
 document.getElementById("openShortcuts").addEventListener("click", () => {
-  chrome.tabs.create({ url: "chrome://extensions/shortcuts" });
+  chrome.tabs.create({ url: (/\bEdg\//.test(navigator.userAgent) ? "edge" : "chrome") + "://extensions/shortcuts" });
 });
 document.getElementById("openOptions").addEventListener("click", () => {
   chrome.runtime.openOptionsPage();

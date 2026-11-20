@@ -2,13 +2,17 @@
 
 [简体中文](README.md) | **English**
 
-Capture the current Bilibili video frame in one click, without pausing playback. Chrome MV3 (the source is also compatible with Safari Web Extensions). One build for every language: the interface follows your browser language (15 languages included: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch, Русский, Português (Brasil), Italiano, Tiếng Việt, ไทย, Bahasa Indonesia, हिन्दी).
+Capture the current Bilibili video frame in one click, without pausing playback. Chrome / Edge MV3 (the source is also compatible with Safari Web Extensions). One build for every language: the interface follows your browser language (15 languages included: English, 简体中文, 繁體中文, 日本語, 한국어, Español, Français, Deutsch, Русский, Português (Brasil), Italiano, Tiếng Việt, ไทย, Bahasa Indonesia, हिन्दी).
 
 ![English settings](setting-en.png)
 
 ## Download
 
 Go to **Releases** and download `Bilibili-Screenshot-vX.Y.Z.zip`.
+
+## Install in Edge
+
+Same steps as Chrome: open `edge://extensions`, turn on **Developer mode** (left sidebar), click **Load unpacked** and select the unzipped folder.
 
 ## Install in Chrome
 
@@ -21,7 +25,7 @@ Go to **Releases** and download `Bilibili-Screenshot-vX.Y.Z.zip`.
 
 - **Three capture entries**, none of which pause playback:
   1. The camera button at the bottom right of the player
-  2. A keyboard shortcut, `Ctrl+Shift+S` by default (Mac: `Control+Shift+S`), changeable at `chrome://extensions/shortcuts`
+  2. A keyboard shortcut, `Ctrl+Shift+S` by default (Mac: `Control+Shift+S`), changeable at `chrome://extensions/shortcuts` (Edge: `edge://extensions/shortcuts`)
   3. The toolbar icon → "Capture current frame"
 - **Two capture modes:**
   - *Clean frame* (default): draws the video frame to a canvas at its **native resolution** (a 4K video gives a 4K image), with no player controls, subtitles, danmaku or cursor. If the browser blocks this for a particular video, it falls back to "What you see" automatically.
@@ -53,7 +57,7 @@ No paid developer account is needed for personal use on your own Mac. In Safari,
 ## Project layout
 
 ```
-extension/            the Chrome extension (load this folder)
+extension/            the Chrome / Edge extension (load this folder)
   manifest.json       MV3 config — the single place the version number lives
   _locales/           message files for 15 locales (chrome.i18n)
   content.js/.css     player button, frame capture, preview overlay, toasts

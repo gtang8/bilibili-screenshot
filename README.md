@@ -2,13 +2,17 @@
 
 **简体中文** | [English](README.en.md)
 
-一键截取 Bilibili 当前视频帧，不用暂停播放。Chrome MV3（源码同样兼容 Safari Web Extension）。所有语言共用同一个版本：界面语言跟随浏览器（已内置 15 种语言：英文、简体中文、繁體中文、日本語、한국어、Español、Français、Deutsch、Русский、Português (Brasil)、Italiano、Tiếng Việt、ไทย、Bahasa Indonesia、हिन्दी）。
+一键截取 Bilibili 当前视频帧，不用暂停播放。Chrome / Edge MV3（源码同样兼容 Safari Web Extension）。所有语言共用同一个版本：界面语言跟随浏览器（已内置 15 种语言：英文、简体中文、繁體中文、日本語、한국어、Español、Français、Deutsch、Русский、Português (Brasil)、Italiano、Tiếng Việt、ไทย、Bahasa Indonesia、हिन्दी）。
 
 ![中文版设置](setting-zh-CN.png)
 
 ## 下载
 
 到 **Releases** 下载 `Bilibili-Screenshot-vX.Y.Z.zip`。
+
+## 在 Edge 里安装
+
+步骤与 Chrome 相同：打开 `edge://extensions`，打开左侧栏的**开发人员模式**，点击**加载解压缩的扩展**并选择解压后的文件夹。
 
 ## 在 Chrome 里安装
 
@@ -21,7 +25,7 @@
 
 - **三种截屏入口**，都不暂停播放：
   1. 播放器右下角的相机按钮
-  2. 快捷键，默认 `Ctrl+Shift+S`（Mac：`Control+Shift+S`），可在 `chrome://extensions/shortcuts` 修改
+  2. 快捷键，默认 `Ctrl+Shift+S`（Mac：`Control+Shift+S`），可在 `chrome://extensions/shortcuts` 修改（Edge：`edge://extensions/shortcuts`）
   3. 点工具栏插件图标 →「截取当前帧」
 - **两种画面模式：**
   - *干净帧*（默认）：canvas 直抓视频帧，**原生分辨率**（视频是 4K 就截 4K），无控制条、无字幕、无弹幕、无鼠标。个别视频抓帧被拦截时自动回退到「所见即所得」。
@@ -53,7 +57,7 @@ Safari 不能直接装 zip。在装了 Xcode 的 Mac 上（App Store 免费下�
 ## 项目结构
 
 ```
-extension/            Chrome 扩展本体（加载这个文件夹）
+extension/            Chrome / Edge 扩展本体（加载这个文件夹）
   manifest.json       MV3 配置，版本号只在这里写一次
   _locales/           15 种语言的文案（chrome.i18n）
   content.js/.css     播放器按钮、抓帧、预览浮层、提示

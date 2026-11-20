@@ -53,7 +53,7 @@ document.getElementById("quality").addEventListener("input", (e) => {
 });
 
 document.getElementById("openShortcuts").addEventListener("click", () => {
-  chrome.tabs.create({ url: "chrome://extensions/shortcuts" });
+  chrome.tabs.create({ url: (/\bEdg\//.test(navigator.userAgent) ? "edge" : "chrome") + "://extensions/shortcuts" });
 });
 
 document.getElementById("save").addEventListener("click", async () => {
