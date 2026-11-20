@@ -5,8 +5,11 @@
 let biliPref = "auto";
 let biliLang = biliResolveLang("auto");
 
+// Strings that name the browser say "Chrome / Edge" (same engine, same pages:
+// chrome://extensions/shortcuts or edge://extensions/shortcuts).
 function t(key, ...subs) {
-  return biliT(biliLang, key, subs) || key;
+  const s = biliT(biliLang, key, subs) || key;
+  return s.replace(/Chrome(?! \/ Edge)/g, "Chrome / Edge");
 }
 
 function localizePage() {
