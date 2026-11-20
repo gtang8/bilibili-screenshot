@@ -24,20 +24,20 @@ Go to **Releases** and download `Bilibili-Screenshot-vX.Y.Z.zip`.
   2. A keyboard shortcut, `Ctrl+Shift+S` by default (Mac: `Control+Shift+S`), changeable at `chrome://extensions/shortcuts`
   3. The toolbar icon → "Capture current frame"
 - **Two capture modes:**
-  - *Clean frame* (default): draws the video frame to a canvas at its **native resolution** (a 4K video gives a 4K image), with no player controls, subtitles or cursor. If the browser blocks this for a particular video, it falls back to "What you see" automatically.
-  - *What you see*: screenshots the viewport and crops it to the video, so **subtitles are included**. Resolution is limited by the window size (fullscreen is best).
+  - *Clean frame* (default): draws the video frame to a canvas at its **native resolution** (a 4K video gives a 4K image), with no player controls, subtitles, danmaku or cursor. If the browser blocks this for a particular video, it falls back to "What you see" automatically.
+  - *What you see*: screenshots the viewport and crops it to the video, so **subtitles and danmaku are included**. Resolution is limited by the window size (fullscreen is best).
 - **After capture:** preview first (then save or copy), save directly, or copy to the clipboard (if copying fails, the preview opens so the image isn't lost).
 - **Formats:** PNG / JPG / WebP with adjustable quality. Clipboard copies are always PNG.
 - **Automatic file names:** `video-title_mm-ss_date-time.ext`, e.g. `Some Tutorial_12-34_20261114_145501.png`.
 - Works on vertical videos and while paused. Tabs opened before the extension was installed work without a refresh.
 - Light and dark theme for the popup and settings page (follows the system).
 
-The extension only runs on `https://www.bilibili.com/*`.
+The extension only runs on video pages at `https://www.bilibili.com/*` — not on live streams (`live.bilibili.com`) or other subdomains.
 
 ## Limits
 
-- **DRM content can't be captured.** Netflix, Disney+ and paid Bilibili movies are blacked out by the browser itself; no extension can get around that. Regular Bilibili videos are unaffected.
-- **Subtitles** are a page overlay, not part of the video picture, so clean frames don't contain them. Use "What you see" for subtitles.
+- **DRM content can't be captured.** Bilibili's paid movies and anime are DRM-protected: the browser blacks out the picture in both capture modes, and no extension can get around that. Regular Bilibili videos (including 4K) are unaffected.
+- **Subtitles and danmaku** are drawn by the web page over the video and are not part of the picture, so clean frames contain neither (subtitles burned into the video itself do appear). Use "What you see" to include them, and capture in fullscreen for the best quality.
 - A clean frame is only as sharp as the quality the video is actually loaded at: pick 1080p in the player to get 1080p, and let it buffer before capturing something important.
 
 ## Safari (Mac)

@@ -8,7 +8,7 @@ Initial public release.
 
 ### Features
 - **Three ways to capture** a frame without pausing playback: the camera button in the player controls (left of the settings gear), a keyboard shortcut (`Ctrl+Shift+S` by default, `Control+Shift+S` on Mac; changeable at `chrome://extensions/shortcuts`), and the toolbar popup.
-- **Two capture modes:** *Clean frame* (default) draws the frame at the video's native resolution with no controls, subtitles or cursor, and falls back to *What you see* if the browser blocks it. *What you see* crops a viewport screenshot to the video, so subtitles are included.
+- **Two capture modes:** *Clean frame* (default) draws the frame at the video's native resolution with no controls, subtitles, danmaku or cursor, and falls back to *What you see* if the browser blocks it. *What you see* crops a viewport screenshot to the video, so subtitles and danmaku are included.
 - **After capture:** preview first, save directly, or copy to the clipboard (if copying fails, the preview opens, so the image is never lost).
 - **PNG / JPG / WebP** with adjustable quality; clipboard copies are always PNG. File names are generated from the video title, time and date.
 - Works on vertical videos and while paused, and on Bilibili tabs that were already open when the extension was installed.
