@@ -122,7 +122,7 @@
     "message": "Impostazioni"
   },
   "popupNote": {
-    "message": "I fotogrammi puliti hanno la risoluzione nativa del video, senza controlli del player né sottotitoli. Per includere i sottotitoli, imposta la modalità di cattura su \"Ciò che vedi\" nelle Impostazioni."
+    "message": "I fotogrammi puliti vengono catturati alla risoluzione in riproduzione, senza controlli del player, sottotitoli né danmaku. Per includere sottotitoli o danmaku, imposta la modalità di cattura su \"Ciò che vedi\" nelle Impostazioni."
   },
   "popupNotBilibiliOpen": {
     "message": "Questa non è una pagina Bilibili. Apri prima un video."
@@ -246,13 +246,19 @@
     "message": "I video protetti da DRM non possono essere catturati: "
   },
   "optDrmDesc": {
-    "message": "per i contenuti DRM come Netflix, Disney+ e i film a pagamento di Bilibili, il browser oscura l'immagine. È una restrizione dell'intero settore che nessuna estensione può aggirare. I normali video Bilibili (incluso il 4K) non ne sono interessati."
+    "message": "i film e gli anime a pagamento di Bilibili sono protetti da DRM; in quelle pagine il browser oscura l'immagine in entrambe le modalità di cattura. È una restrizione valida in tutto il settore che nessuna estensione può aggirare. I normali video di Bilibili non sono interessati e i fotogrammi puliti vengono catturati alla risoluzione in riproduzione, fino a 4K."
   },
   "optSubsTitle": {
-    "message": "Sottotitoli: "
+    "message": "Sottotitoli e danmaku: "
   },
   "optSubsDesc": {
-    "message": "i fotogrammi puliti non contengono mai sottotitoli (sono sovrapposti dalla pagina web e non fanno parte dell'immagine del video). Per includere i sottotitoli, usa \"Ciò che vedi\", attiva i sottotitoli e cattura a schermo intero."
+    "message": "i fotogrammi puliti non contengono né sottotitoli né danmaku — entrambi sono sovrapposti dalla pagina web sopra il video e non fanno parte dell'immagine (i sottotitoli impressi nel video stesso fanno parte dell'immagine e compaiono). Per includerli, usa \"Ciò che vedi\"; cattura alle dimensioni mostrate sullo schermo, quindi cattura a schermo intero per la migliore qualità."
+  },
+  "optScopeTitle": {
+    "message": "Ambito: "
+  },
+  "optScopeDesc": {
+    "message": "questa estensione funziona solo sulle pagine video di www.bilibili.com — non sulle dirette (live.bilibili.com) né su altri sottodomini."
   },
   "optVertical": {
     "message": "Anche i video verticali funzionano (risoluzione verticale nativa)."

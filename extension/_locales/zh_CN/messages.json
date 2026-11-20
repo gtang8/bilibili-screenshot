@@ -122,7 +122,7 @@
     "message": "设置"
   },
   "popupNote": {
-    "message": "干净帧是视频原生分辨率、不带控制条和字幕；想要字幕一起截，在设置里把画面模式改成「所见即所得」。"
+    "message": "干净帧按当前播放的清晰度截，不带控制条、字幕和弹幕；想连字幕或弹幕一起截，在设置里把画面模式改成「所见即所得」。"
   },
   "popupNotBilibiliOpen": {
     "message": "当前不是 Bilibili 页面，先打开一个视频再截。"
@@ -246,13 +246,19 @@
     "message": "受 DRM 保护的视频截不了："
   },
   "optDrmDesc": {
-    "message": "Netflix、Disney+、Bilibili 付费电影等带 DRM 的内容，浏览器会把画面挡成黑屏，这是行业统一限制，任何插件都绕不过去。普通 Bilibili 视频（包括 4K）不受影响。"
+    "message": "Bilibili 的付费电影、番剧带 DRM 保护，这类页面上浏览器会把画面挡成黑屏，两种截屏模式都一样；这是行业统一限制，任何插件都绕不过去。普通 Bilibili 视频不受影响，干净帧按当前播放的清晰度截、最高 4K。"
   },
   "optSubsTitle": {
-    "message": "字幕："
+    "message": "字幕和弹幕："
   },
   "optSubsDesc": {
-    "message": "干净帧里本来就不含字幕（字幕是网页叠上去的，不是视频画面的一部分）；要带字幕请用「所见即所得」并把字幕打开、全屏播放时截。"
+    "message": "干净帧里不含字幕、也不含弹幕——两者都是网页叠在视频上面的，不是画面的一部分（视频本身烧录的硬字幕属于画面，会截进去）。想连字幕、弹幕一起截请用「所见即所得」；它按屏幕上显示的大小截，全屏时截效果最好。"
+  },
+  "optScopeTitle": {
+    "message": "适用范围："
+  },
+  "optScopeDesc": {
+    "message": "本插件只在 www.bilibili.com 的视频页工作，不支持直播间（live.bilibili.com）和其他子域名页面。"
   },
   "optVertical": {
     "message": "竖屏视频同样能截（竖屏原生分辨率）。"

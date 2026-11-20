@@ -122,7 +122,7 @@
     "message": "Paramètres"
   },
   "popupNote": {
-    "message": "Les images propres sont à la résolution native de la vidéo, sans les commandes du lecteur ni les sous-titres. Pour inclure les sous-titres, basculez le mode de capture sur « Ce que vous voyez » dans les Paramètres."
+    "message": "Les images propres sont capturées à la résolution en cours de lecture, sans les commandes du lecteur, ni sous-titres, ni danmaku. Pour inclure les sous-titres ou le danmaku, basculez le mode de capture sur « Ce que vous voyez » dans les Paramètres."
   },
   "popupNotBilibiliOpen": {
     "message": "Ce n'est pas une page Bilibili. Ouvrez d'abord une vidéo."
@@ -246,13 +246,19 @@
     "message": "Les vidéos protégées par DRM ne peuvent pas être capturées : "
   },
   "optDrmDesc": {
-    "message": "pour les contenus DRM comme Netflix, Disney+ et les films payants Bilibili, le navigateur noircit l'image. C'est une restriction à l'échelle de l'industrie qu'aucune extension ne peut contourner. Les vidéos Bilibili ordinaires (y compris la 4K) ne sont pas concernées."
+    "message": "les films et anime payants de Bilibili sont protégés par DRM ; sur ces pages, le navigateur masque l'image en noir dans les deux modes de capture. C'est une restriction commune à tout le secteur qu'aucune extension ne peut contourner. Les vidéos Bilibili ordinaires ne sont pas concernées, et les images propres sont capturées à la résolution en cours de lecture, jusqu'à 4K."
   },
   "optSubsTitle": {
-    "message": "Sous-titres : "
+    "message": "Sous-titres et danmaku : "
   },
   "optSubsDesc": {
-    "message": "les images propres ne contiennent jamais de sous-titres (ils sont superposés par la page web et ne font pas partie de l'image vidéo). Pour inclure les sous-titres, utilisez « Ce que vous voyez », activez les sous-titres et capturez en plein écran."
+    "message": "les images propres ne contiennent ni sous-titres ni danmaku — les deux sont superposés par la page web par-dessus la vidéo et ne font pas partie de l'image (les sous-titres incrustés dans la vidéo elle-même en font partie et apparaissent). Pour les inclure, utilisez « Ce que vous voyez » ; la capture se fait à la taille affichée à l'écran, donc capturez en plein écran pour la meilleure qualité."
+  },
+  "optScopeTitle": {
+    "message": "Portée : "
+  },
+  "optScopeDesc": {
+    "message": "cette extension fonctionne uniquement sur les pages vidéo de www.bilibili.com — pas sur les directs (live.bilibili.com) ni sur les autres sous-domaines."
   },
   "optVertical": {
     "message": "Les vidéos verticales fonctionnent aussi (résolution verticale native)."

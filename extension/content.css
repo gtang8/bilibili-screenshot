@@ -141,11 +141,11 @@
   background: #3f3f3f;
 }
 .bili-preview-actions .bili-save {
-  background: #c00;
-  border-color: #c00;
+  background: #fb6699;
+  border-color: #fb6699;
 }
 .bili-preview-actions .bili-save:hover {
-  background: #e00;
+  background: #fc85ad;
 }
 
 /* Bilibili dedicated build: button inside .bpx-player-control-bottom-right.

@@ -122,7 +122,7 @@
     "message": "Ajustes"
   },
   "popupNote": {
-    "message": "Los fotogramas limpios tienen la resolución nativa del vídeo, sin controles del reproductor ni subtítulos. Para incluir subtítulos, cambia el modo de captura a «Lo que ves» en Ajustes."
+    "message": "Los fotogramas limpios se capturan con la resolución que se está reproduciendo, sin controles del reproductor, subtítulos ni danmaku. Para incluir subtítulos o danmaku, cambia el modo de captura a «Lo que ves» en Ajustes."
   },
   "popupNotBilibiliOpen": {
     "message": "Esto no es una página de Bilibili. Abre primero un vídeo."
@@ -246,13 +246,19 @@
     "message": "Los vídeos protegidos con DRM no se pueden capturar: "
   },
   "optDrmDesc": {
-    "message": "en contenido con DRM como Netflix, Disney+ y las películas de pago de Bilibili, el navegador oscurece la imagen. Es una restricción de toda la industria que ninguna extensión puede eludir. Los vídeos normales de Bilibili (incluido 4K) no se ven afectados."
+    "message": "las películas y el anime de pago de Bilibili están protegidos con DRM; en esas páginas el navegador oscurece la imagen en ambos modos de captura. Es una restricción de toda la industria que ninguna extensión puede eludir. Los vídeos normales de Bilibili no se ven afectados, y los fotogramas limpios se capturan con la resolución que se está reproduciendo, hasta 4K."
   },
   "optSubsTitle": {
-    "message": "Subtítulos: "
+    "message": "Subtítulos y danmaku: "
   },
   "optSubsDesc": {
-    "message": "los fotogramas limpios nunca contienen subtítulos (los superpone la página web y no forman parte de la imagen del vídeo). Para incluir subtítulos, usa «Lo que ves», activa los subtítulos y captura en pantalla completa."
+    "message": "los fotogramas limpios no contienen subtítulos ni danmaku: ambos los superpone la página web sobre el vídeo y no forman parte de la imagen (los subtítulos grabados en el propio vídeo sí forman parte de la imagen y aparecen). Para incluirlos, usa «Lo que ves»; captura con el tamaño mostrado en pantalla, así que captura en pantalla completa para obtener la mejor calidad."
+  },
+  "optScopeTitle": {
+    "message": "Ámbito: "
+  },
+  "optScopeDesc": {
+    "message": "esta extensión funciona solo en las páginas de vídeo de www.bilibili.com, no en directos (live.bilibili.com) ni en otros subdominios."
   },
   "optVertical": {
     "message": "Los vídeos verticales también funcionan (resolución vertical nativa)."

@@ -122,7 +122,7 @@
     "message": "Settings"
   },
   "popupNote": {
-    "message": "Clean frames are the video's native resolution, without player controls or subtitles. To include subtitles, switch the capture mode to \"What you see\" in Settings."
+    "message": "Clean frames are captured at the resolution currently playing, without player controls, subtitles or danmaku. To include subtitles or danmaku, switch the capture mode to \"What you see\" in Settings."
   },
   "popupNotBilibiliOpen": {
     "message": "This is not a Bilibili page. Open a video first."
@@ -246,13 +246,19 @@
     "message": "DRM-protected video can't be captured: "
   },
   "optDrmDesc": {
-    "message": "for DRM content such as Netflix, Disney+ and paid Bilibili movies, the browser blacks out the picture. This is an industry-wide restriction that no extension can get around. Regular Bilibili videos (including 4K) are not affected."
+    "message": "Bilibili's paid movies and anime are DRM-protected — on those pages the browser blacks out the picture in both capture modes. This is an industry-wide restriction that no extension can get around. Regular Bilibili videos are not affected, and clean frames capture at the resolution currently playing, up to 4K."
   },
   "optSubsTitle": {
-    "message": "Subtitles: "
+    "message": "Subtitles and danmaku: "
   },
   "optSubsDesc": {
-    "message": "clean frames never contain subtitles (they are overlaid by the web page and are not part of the video picture). To include subtitles, use \"What you see\", turn subtitles on, and capture in fullscreen."
+    "message": "clean frames contain neither subtitles nor danmaku — both are drawn by the web page over the video and are not part of the picture (subtitles burned into the video itself are part of the picture and do appear). To include them, use \"What you see\"; it captures at the size shown on screen, so capture in fullscreen for the best quality."
+  },
+  "optScopeTitle": {
+    "message": "Scope: "
+  },
+  "optScopeDesc": {
+    "message": "this extension works on video pages at www.bilibili.com only — not on live streams (live.bilibili.com) or other subdomains."
   },
   "optVertical": {
     "message": "Vertical videos work too (native vertical resolution)."

@@ -122,7 +122,7 @@
     "message": "Setelan"
   },
   "popupNote": {
-    "message": "Bingkai bersih adalah resolusi asli video, tanpa kontrol pemutar atau subtitel. Untuk menyertakan subtitel, ubah mode penangkapan menjadi \"Yang Anda lihat\" di Setelan."
+    "message": "Bingkai bersih ditangkap pada resolusi yang sedang diputar, tanpa kontrol pemutar, subtitel, atau danmaku. Untuk menyertakan subtitel atau danmaku, ubah mode penangkapan menjadi \"Yang Anda lihat\" di Setelan."
   },
   "popupNotBilibiliOpen": {
     "message": "Ini bukan halaman Bilibili. Buka video terlebih dahulu."
@@ -246,13 +246,19 @@
     "message": "Video yang dilindungi DRM tidak dapat ditangkap: "
   },
   "optDrmDesc": {
-    "message": "untuk konten DRM seperti Netflix, Disney+, dan film berbayar Bilibili, browser menghitamkan gambar. Ini adalah batasan di seluruh industri yang tidak dapat dilewati ekstensi mana pun. Video Bilibili biasa (termasuk 4K) tidak terpengaruh."
+    "message": "film dan anime berbayar di Bilibili dilindungi DRM; pada halaman tersebut browser menghitamkan gambar di kedua mode tangkapan. Ini adalah pembatasan di seluruh industri yang tidak dapat dilewati ekstensi mana pun. Video Bilibili biasa tidak terpengaruh, dan bingkai bersih ditangkap pada resolusi yang sedang diputar, hingga 4K."
   },
   "optSubsTitle": {
-    "message": "Subtitel: "
+    "message": "Subtitel dan danmaku: "
   },
   "optSubsDesc": {
-    "message": "bingkai bersih tidak pernah berisi subtitel (subtitel ditampilkan oleh halaman web dan bukan bagian dari gambar video). Untuk menyertakan subtitel, gunakan \"Yang Anda lihat\", aktifkan subtitel, dan tangkap dalam layar penuh."
+    "message": "bingkai bersih tidak berisi subtitel maupun danmaku — keduanya ditampilkan oleh halaman web di atas video dan bukan bagian dari gambar (subtitel yang tertanam permanen dalam video itu sendiri adalah bagian dari gambar dan akan muncul). Untuk menyertakannya, gunakan \"Yang Anda lihat\"; mode ini menangkap pada ukuran yang ditampilkan di layar, jadi tangkap dalam layar penuh untuk kualitas terbaik."
+  },
+  "optScopeTitle": {
+    "message": "Cakupan: "
+  },
+  "optScopeDesc": {
+    "message": "ekstensi ini hanya bekerja pada halaman video di www.bilibili.com — bukan pada siaran langsung (live.bilibili.com) atau subdomain lainnya."
   },
   "optVertical": {
     "message": "Video vertikal juga berfungsi (resolusi vertikal asli)."

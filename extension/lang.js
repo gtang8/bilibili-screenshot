@@ -132,7 +132,7 @@ var BILI_STRINGS = {
    "message": "Settings"
   },
   "popupNote": {
-   "message": "Clean frames are the video's native resolution, without player controls or subtitles. To include subtitles, switch the capture mode to \"What you see\" in Settings."
+   "message": "Clean frames are captured at the resolution currently playing, without player controls, subtitles or danmaku. To include subtitles or danmaku, switch the capture mode to \"What you see\" in Settings."
   },
   "popupNotBilibiliOpen": {
    "message": "This is not a Bilibili page. Open a video first."
@@ -256,13 +256,19 @@ var BILI_STRINGS = {
    "message": "DRM-protected video can't be captured: "
   },
   "optDrmDesc": {
-   "message": "for DRM content such as Netflix, Disney+ and paid Bilibili movies, the browser blacks out the picture. This is an industry-wide restriction that no extension can get around. Regular Bilibili videos (including 4K) are not affected."
+   "message": "Bilibili's paid movies and anime are DRM-protected — on those pages the browser blacks out the picture in both capture modes. This is an industry-wide restriction that no extension can get around. Regular Bilibili videos are not affected, and clean frames capture at the resolution currently playing, up to 4K."
   },
   "optSubsTitle": {
-   "message": "Subtitles: "
+   "message": "Subtitles and danmaku: "
   },
   "optSubsDesc": {
-   "message": "clean frames never contain subtitles (they are overlaid by the web page and are not part of the video picture). To include subtitles, use \"What you see\", turn subtitles on, and capture in fullscreen."
+   "message": "clean frames contain neither subtitles nor danmaku — both are drawn by the web page over the video and are not part of the picture (subtitles burned into the video itself are part of the picture and do appear). To include them, use \"What you see\"; it captures at the size shown on screen, so capture in fullscreen for the best quality."
+  },
+  "optScopeTitle": {
+   "message": "Scope: "
+  },
+  "optScopeDesc": {
+   "message": "this extension works on video pages at www.bilibili.com only — not on live streams (live.bilibili.com) or other subdomains."
   },
   "optVertical": {
    "message": "Vertical videos work too (native vertical resolution)."
@@ -407,7 +413,7 @@ var BILI_STRINGS = {
    "message": "Einstellungen"
   },
   "popupNote": {
-   "message": "Saubere Frames haben die native Auflösung des Videos, ohne Player-Steuerung oder Untertitel. Um Untertitel einzubeziehen, stellen Sie den Erfassungsmodus in den Einstellungen auf „Was Sie sehen“ um."
+   "message": "Saubere Frames werden in der gerade abgespielten Auflösung erfasst, ohne Player-Steuerung, Untertitel oder Danmaku. Um Untertitel oder Danmaku einzubeziehen, stellen Sie den Erfassungsmodus in den Einstellungen auf „Was Sie sehen“ um."
   },
   "popupNotBilibiliOpen": {
    "message": "Dies ist keine Bilibili-Seite. Öffnen Sie zuerst ein Video."
@@ -531,13 +537,19 @@ var BILI_STRINGS = {
    "message": "DRM-geschützte Videos können nicht erfasst werden: "
   },
   "optDrmDesc": {
-   "message": "Bei DRM-Inhalten wie Netflix, Disney+ und kostenpflichtigen Bilibili-Filmen schwärzt der Browser das Bild. Das ist eine branchenweite Einschränkung, die keine Erweiterung umgehen kann. Normale Bilibili-Videos (einschließlich 4K) sind nicht betroffen."
+   "message": "Bezahlte Filme und Anime auf Bilibili sind DRM-geschützt — auf solchen Seiten schwärzt der Browser das Bild in beiden Erfassungsmodi. Das ist eine branchenweite Einschränkung, die keine Erweiterung umgehen kann. Normale Bilibili-Videos sind nicht betroffen; saubere Frames werden in der gerade abgespielten Auflösung bis zu 4K erfasst."
   },
   "optSubsTitle": {
-   "message": "Untertitel: "
+   "message": "Untertitel und Danmaku: "
   },
   "optSubsDesc": {
-   "message": "Saubere Frames enthalten nie Untertitel (sie werden von der Webseite eingeblendet und sind kein Teil des Videobildes). Um Untertitel einzubeziehen, verwenden Sie „Was Sie sehen“, schalten Sie die Untertitel ein und erfassen Sie im Vollbild."
+   "message": "Saubere Frames enthalten weder Untertitel noch Danmaku — beides wird von der Webseite über das Video gelegt und ist kein Teil des Bildes (fest ins Video eingebrannte Untertitel gehören zum Bild und erscheinen). Um sie einzubeziehen, verwenden Sie „Was Sie sehen“; es erfasst in der auf dem Bildschirm angezeigten Größe, also am besten im Vollbild erfassen."
+  },
+  "optScopeTitle": {
+   "message": "Geltungsbereich: "
+  },
+  "optScopeDesc": {
+   "message": "Diese Erweiterung funktioniert nur auf Videoseiten unter www.bilibili.com — nicht bei Livestreams (live.bilibili.com) oder anderen Subdomains."
   },
   "optVertical": {
    "message": "Vertikale Videos funktionieren ebenfalls (native vertikale Auflösung)."
@@ -682,7 +694,7 @@ var BILI_STRINGS = {
    "message": "Ajustes"
   },
   "popupNote": {
-   "message": "Los fotogramas limpios tienen la resolución nativa del vídeo, sin controles del reproductor ni subtítulos. Para incluir subtítulos, cambia el modo de captura a «Lo que ves» en Ajustes."
+   "message": "Los fotogramas limpios se capturan con la resolución que se está reproduciendo, sin controles del reproductor, subtítulos ni danmaku. Para incluir subtítulos o danmaku, cambia el modo de captura a «Lo que ves» en Ajustes."
   },
   "popupNotBilibiliOpen": {
    "message": "Esto no es una página de Bilibili. Abre primero un vídeo."
@@ -806,13 +818,19 @@ var BILI_STRINGS = {
    "message": "Los vídeos protegidos con DRM no se pueden capturar: "
   },
   "optDrmDesc": {
-   "message": "en contenido con DRM como Netflix, Disney+ y las películas de pago de Bilibili, el navegador oscurece la imagen. Es una restricción de toda la industria que ninguna extensión puede eludir. Los vídeos normales de Bilibili (incluido 4K) no se ven afectados."
+   "message": "las películas y el anime de pago de Bilibili están protegidos con DRM; en esas páginas el navegador oscurece la imagen en ambos modos de captura. Es una restricción de toda la industria que ninguna extensión puede eludir. Los vídeos normales de Bilibili no se ven afectados, y los fotogramas limpios se capturan con la resolución que se está reproduciendo, hasta 4K."
   },
   "optSubsTitle": {
-   "message": "Subtítulos: "
+   "message": "Subtítulos y danmaku: "
   },
   "optSubsDesc": {
-   "message": "los fotogramas limpios nunca contienen subtítulos (los superpone la página web y no forman parte de la imagen del vídeo). Para incluir subtítulos, usa «Lo que ves», activa los subtítulos y captura en pantalla completa."
+   "message": "los fotogramas limpios no contienen subtítulos ni danmaku: ambos los superpone la página web sobre el vídeo y no forman parte de la imagen (los subtítulos grabados en el propio vídeo sí forman parte de la imagen y aparecen). Para incluirlos, usa «Lo que ves»; captura con el tamaño mostrado en pantalla, así que captura en pantalla completa para obtener la mejor calidad."
+  },
+  "optScopeTitle": {
+   "message": "Ámbito: "
+  },
+  "optScopeDesc": {
+   "message": "esta extensión funciona solo en las páginas de vídeo de www.bilibili.com, no en directos (live.bilibili.com) ni en otros subdominios."
   },
   "optVertical": {
    "message": "Los vídeos verticales también funcionan (resolución vertical nativa)."
@@ -957,7 +975,7 @@ var BILI_STRINGS = {
    "message": "Paramètres"
   },
   "popupNote": {
-   "message": "Les images propres sont à la résolution native de la vidéo, sans les commandes du lecteur ni les sous-titres. Pour inclure les sous-titres, basculez le mode de capture sur « Ce que vous voyez » dans les Paramètres."
+   "message": "Les images propres sont capturées à la résolution en cours de lecture, sans les commandes du lecteur, ni sous-titres, ni danmaku. Pour inclure les sous-titres ou le danmaku, basculez le mode de capture sur « Ce que vous voyez » dans les Paramètres."
   },
   "popupNotBilibiliOpen": {
    "message": "Ce n'est pas une page Bilibili. Ouvrez d'abord une vidéo."
@@ -1081,13 +1099,19 @@ var BILI_STRINGS = {
    "message": "Les vidéos protégées par DRM ne peuvent pas être capturées : "
   },
   "optDrmDesc": {
-   "message": "pour les contenus DRM comme Netflix, Disney+ et les films payants Bilibili, le navigateur noircit l'image. C'est une restriction à l'échelle de l'industrie qu'aucune extension ne peut contourner. Les vidéos Bilibili ordinaires (y compris la 4K) ne sont pas concernées."
+   "message": "les films et anime payants de Bilibili sont protégés par DRM ; sur ces pages, le navigateur masque l'image en noir dans les deux modes de capture. C'est une restriction commune à tout le secteur qu'aucune extension ne peut contourner. Les vidéos Bilibili ordinaires ne sont pas concernées, et les images propres sont capturées à la résolution en cours de lecture, jusqu'à 4K."
   },
   "optSubsTitle": {
-   "message": "Sous-titres : "
+   "message": "Sous-titres et danmaku : "
   },
   "optSubsDesc": {
-   "message": "les images propres ne contiennent jamais de sous-titres (ils sont superposés par la page web et ne font pas partie de l'image vidéo). Pour inclure les sous-titres, utilisez « Ce que vous voyez », activez les sous-titres et capturez en plein écran."
+   "message": "les images propres ne contiennent ni sous-titres ni danmaku — les deux sont superposés par la page web par-dessus la vidéo et ne font pas partie de l'image (les sous-titres incrustés dans la vidéo elle-même en font partie et apparaissent). Pour les inclure, utilisez « Ce que vous voyez » ; la capture se fait à la taille affichée à l'écran, donc capturez en plein écran pour la meilleure qualité."
+  },
+  "optScopeTitle": {
+   "message": "Portée : "
+  },
+  "optScopeDesc": {
+   "message": "cette extension fonctionne uniquement sur les pages vidéo de www.bilibili.com — pas sur les directs (live.bilibili.com) ni sur les autres sous-domaines."
   },
   "optVertical": {
    "message": "Les vidéos verticales fonctionnent aussi (résolution verticale native)."
@@ -1232,7 +1256,7 @@ var BILI_STRINGS = {
    "message": "सेटिंग्स"
   },
   "popupNote": {
-   "message": "क्लीन फ़्रेम वीडियो का मूल रिज़ॉल्यूशन होते हैं, बिना प्लेयर नियंत्रण या उपशीर्षकों के. उपशीर्षक शामिल करने के लिए, सेटिंग्स में कैप्चर मोड को \"जो आप देखते हैं\" पर बदलें."
+   "message": "क्लीन फ़्रेम वर्तमान में चल रहे रिज़ॉल्यूशन पर कैप्चर होते हैं, बिना प्लेयर नियंत्रण, उपशीर्षक या डैनमाकु के। उपशीर्षक या डैनमाकु शामिल करने के लिए, सेटिंग्स में कैप्चर मोड को \"जो आप देखते हैं\" पर बदलें।"
   },
   "popupNotBilibiliOpen": {
    "message": "यह Bilibili पेज नहीं है. पहले कोई वीडियो खोलें."
@@ -1356,13 +1380,19 @@ var BILI_STRINGS = {
    "message": "DRM-संरक्षित वीडियो कैप्चर नहीं किए जा सकते: "
   },
   "optDrmDesc": {
-   "message": "Netflix, Disney+ और सशुल्क Bilibili फिल्मों जैसी DRM सामग्री के लिए, ब्राउज़र तस्वीर को काला कर देता है. यह उद्योग-व्यापी प्रतिबंध है जिसे कोई भी एक्सटेंशन नहीं टाल सकता. नियमित Bilibili वीडियो (4K सहित) प्रभावित नहीं होते."
+   "message": "Bilibili की सशुल्क फ़िल्में और ऐनिमे DRM-संरक्षित हैं; ऐसे पेजों पर ब्राउज़र दोनों कैप्चर मोड में तस्वीर को काला कर देता है। यह पूरे उद्योग पर लागू प्रतिबंध है जिसे कोई भी एक्सटेंशन नहीं हटा सकता। सामान्य Bilibili वीडियो प्रभावित नहीं होते, और क्लीन फ़्रेम वर्तमान में चल रहे रिज़ॉल्यूशन पर, 4K तक, कैप्चर होते हैं।"
   },
   "optSubsTitle": {
-   "message": "उपशीर्षक: "
+   "message": "उपशीर्षक और डैनमाकु: "
   },
   "optSubsDesc": {
-   "message": "क्लीन फ़्रेम में कभी उपशीर्षक नहीं होते (वे वेब पेज द्वारा ऊपर से लगाए जाते हैं और वीडियो तस्वीर का हिस्सा नहीं होते). उपशीर्षक शामिल करने के लिए, \"जो आप देखते हैं\" का उपयोग करें, उपशीर्षक चालू करें, और पूर्ण स्क्रीन में कैप्चर करें."
+   "message": "क्लीन फ़्रेम में न उपशीर्षक होते हैं न डैनमाकु — दोनों को वेब पेज वीडियो के ऊपर लगाता है और वे तस्वीर का हिस्सा नहीं होते (वीडियो में ही जले हुए उपशीर्षक तस्वीर का हिस्सा होते हैं और दिखाई देते हैं)। इन्हें शामिल करने के लिए \"जो आप देखते हैं\" का उपयोग करें; यह स्क्रीन पर दिख रहे आकार में कैप्चर करता है, इसलिए सर्वोत्तम गुणवत्ता के लिए पूर्ण स्क्रीन में कैप्चर करें।"
+  },
+  "optScopeTitle": {
+   "message": "दायरा: "
+  },
+  "optScopeDesc": {
+   "message": "यह एक्सटेंशन केवल www.bilibili.com के वीडियो पेजों पर काम करता है — लाइव स्ट्रीम (live.bilibili.com) या अन्य सबडोमेन पर नहीं।"
   },
   "optVertical": {
    "message": "ऊर्ध्वाधर वीडियो भी काम करते हैं (मूल ऊर्ध्वाधर रिज़ॉल्यूशन)।"
@@ -1507,7 +1537,7 @@ var BILI_STRINGS = {
    "message": "Setelan"
   },
   "popupNote": {
-   "message": "Bingkai bersih adalah resolusi asli video, tanpa kontrol pemutar atau subtitel. Untuk menyertakan subtitel, ubah mode penangkapan menjadi \"Yang Anda lihat\" di Setelan."
+   "message": "Bingkai bersih ditangkap pada resolusi yang sedang diputar, tanpa kontrol pemutar, subtitel, atau danmaku. Untuk menyertakan subtitel atau danmaku, ubah mode penangkapan menjadi \"Yang Anda lihat\" di Setelan."
   },
   "popupNotBilibiliOpen": {
    "message": "Ini bukan halaman Bilibili. Buka video terlebih dahulu."
@@ -1631,13 +1661,19 @@ var BILI_STRINGS = {
    "message": "Video yang dilindungi DRM tidak dapat ditangkap: "
   },
   "optDrmDesc": {
-   "message": "untuk konten DRM seperti Netflix, Disney+, dan film berbayar Bilibili, browser menghitamkan gambar. Ini adalah batasan di seluruh industri yang tidak dapat dilewati ekstensi mana pun. Video Bilibili biasa (termasuk 4K) tidak terpengaruh."
+   "message": "film dan anime berbayar di Bilibili dilindungi DRM; pada halaman tersebut browser menghitamkan gambar di kedua mode tangkapan. Ini adalah pembatasan di seluruh industri yang tidak dapat dilewati ekstensi mana pun. Video Bilibili biasa tidak terpengaruh, dan bingkai bersih ditangkap pada resolusi yang sedang diputar, hingga 4K."
   },
   "optSubsTitle": {
-   "message": "Subtitel: "
+   "message": "Subtitel dan danmaku: "
   },
   "optSubsDesc": {
-   "message": "bingkai bersih tidak pernah berisi subtitel (subtitel ditampilkan oleh halaman web dan bukan bagian dari gambar video). Untuk menyertakan subtitel, gunakan \"Yang Anda lihat\", aktifkan subtitel, dan tangkap dalam layar penuh."
+   "message": "bingkai bersih tidak berisi subtitel maupun danmaku — keduanya ditampilkan oleh halaman web di atas video dan bukan bagian dari gambar (subtitel yang tertanam permanen dalam video itu sendiri adalah bagian dari gambar dan akan muncul). Untuk menyertakannya, gunakan \"Yang Anda lihat\"; mode ini menangkap pada ukuran yang ditampilkan di layar, jadi tangkap dalam layar penuh untuk kualitas terbaik."
+  },
+  "optScopeTitle": {
+   "message": "Cakupan: "
+  },
+  "optScopeDesc": {
+   "message": "ekstensi ini hanya bekerja pada halaman video di www.bilibili.com — bukan pada siaran langsung (live.bilibili.com) atau subdomain lainnya."
   },
   "optVertical": {
    "message": "Video vertikal juga berfungsi (resolusi vertikal asli)."
@@ -1782,7 +1818,7 @@ var BILI_STRINGS = {
    "message": "Impostazioni"
   },
   "popupNote": {
-   "message": "I fotogrammi puliti hanno la risoluzione nativa del video, senza controlli del player né sottotitoli. Per includere i sottotitoli, imposta la modalità di cattura su \"Ciò che vedi\" nelle Impostazioni."
+   "message": "I fotogrammi puliti vengono catturati alla risoluzione in riproduzione, senza controlli del player, sottotitoli né danmaku. Per includere sottotitoli o danmaku, imposta la modalità di cattura su \"Ciò che vedi\" nelle Impostazioni."
   },
   "popupNotBilibiliOpen": {
    "message": "Questa non è una pagina Bilibili. Apri prima un video."
@@ -1906,13 +1942,19 @@ var BILI_STRINGS = {
    "message": "I video protetti da DRM non possono essere catturati: "
   },
   "optDrmDesc": {
-   "message": "per i contenuti DRM come Netflix, Disney+ e i film a pagamento di Bilibili, il browser oscura l'immagine. È una restrizione dell'intero settore che nessuna estensione può aggirare. I normali video Bilibili (incluso il 4K) non ne sono interessati."
+   "message": "i film e gli anime a pagamento di Bilibili sono protetti da DRM; in quelle pagine il browser oscura l'immagine in entrambe le modalità di cattura. È una restrizione valida in tutto il settore che nessuna estensione può aggirare. I normali video di Bilibili non sono interessati e i fotogrammi puliti vengono catturati alla risoluzione in riproduzione, fino a 4K."
   },
   "optSubsTitle": {
-   "message": "Sottotitoli: "
+   "message": "Sottotitoli e danmaku: "
   },
   "optSubsDesc": {
-   "message": "i fotogrammi puliti non contengono mai sottotitoli (sono sovrapposti dalla pagina web e non fanno parte dell'immagine del video). Per includere i sottotitoli, usa \"Ciò che vedi\", attiva i sottotitoli e cattura a schermo intero."
+   "message": "i fotogrammi puliti non contengono né sottotitoli né danmaku — entrambi sono sovrapposti dalla pagina web sopra il video e non fanno parte dell'immagine (i sottotitoli impressi nel video stesso fanno parte dell'immagine e compaiono). Per includerli, usa \"Ciò che vedi\"; cattura alle dimensioni mostrate sullo schermo, quindi cattura a schermo intero per la migliore qualità."
+  },
+  "optScopeTitle": {
+   "message": "Ambito: "
+  },
+  "optScopeDesc": {
+   "message": "questa estensione funziona solo sulle pagine video di www.bilibili.com — non sulle dirette (live.bilibili.com) né su altri sottodomini."
   },
   "optVertical": {
    "message": "Anche i video verticali funzionano (risoluzione verticale nativa)."
@@ -2057,7 +2099,7 @@ var BILI_STRINGS = {
    "message": "設定"
   },
   "popupNote": {
-   "message": "クリーンフレームは動画本来の解像度で、プレーヤーのコントロールや字幕は含まれません。字幕を含めるには、設定で撮影モードを「見たまま」に切り替えてください。"
+   "message": "クリーンフレームは現在再生中の解像度で撮影され、プレーヤーのコントロール、字幕、弾幕は含まれません。字幕や弾幕を含めるには、設定で撮影モードを「見たまま」に切り替えてください。"
   },
   "popupNotBilibiliOpen": {
    "message": "これはBilibiliのページではありません。まず動画を開いてください。"
@@ -2181,13 +2223,19 @@ var BILI_STRINGS = {
    "message": "DRM保護された動画は撮影できません："
   },
   "optDrmDesc": {
-   "message": "Netflix、Disney+、Bilibiliの有料映画などのDRMコンテンツは、ブラウザが画面を真っ黒にします。これは業界共通の制限で、どの拡張機能でも回避できません。通常のBilibili動画（4Kを含む）は影響を受けません。"
+   "message": "Bilibili の有料映画やアニメは DRM で保護されており、そのページではどちらの撮影モードでもブラウザが映像を黒く隠します。これは業界共通の制限で、どの拡張機能でも回避できません。通常の Bilibili 動画は影響を受けず、クリーンフレームは現在再生中の解像度（最大 4K）で撮影されます。"
   },
   "optSubsTitle": {
-   "message": "字幕："
+   "message": "字幕と弾幕："
   },
   "optSubsDesc": {
-   "message": "クリーンフレームに字幕は含まれません（字幕はウェブページが重ねて表示しているもので、動画の映像の一部ではありません）。字幕を含めるには「見たまま」を使い、字幕をオンにして全画面で撮影してください。"
+   "message": "クリーンフレームには字幕も弾幕も含まれません。どちらもウェブページが動画の上に重ねて表示しているもので、映像の一部ではありません（動画自体に焼き込まれた字幕は映像の一部なので写ります）。字幕や弾幕を含めるには「見たまま」を使ってください。画面に表示されているサイズで撮影されるため、全画面で撮影すると最も高画質になります。"
+  },
+  "optScopeTitle": {
+   "message": "対象範囲："
+  },
+  "optScopeDesc": {
+   "message": "この拡張機能は www.bilibili.com の動画ページでのみ動作します。ライブ配信（live.bilibili.com）やその他のサブドメインでは動作しません。"
   },
   "optVertical": {
    "message": "縦向き動画でも撮影できます（縦向きの本来の解像度）。"
@@ -2332,7 +2380,7 @@ var BILI_STRINGS = {
    "message": "설정"
   },
   "popupNote": {
-   "message": "클린 프레임은 플레이어 컨트롤이나 자막 없이 동영상의 원본 해상도 그대로입니다. 자막을 포함하려면 설정에서 캡처 모드를 \"보이는 그대로\"로 바꾸세요."
+   "message": "클린 프레임은 플레이어 컨트롤, 자막, 탄막 없이 현재 재생 중인 해상도로 캡처됩니다. 자막이나 탄막을 포함하려면 설정에서 캡처 모드를 \"보이는 그대로\"로 바꾸세요."
   },
   "popupNotBilibiliOpen": {
    "message": "Bilibili 페이지가 아닙니다. 먼저 동영상을 여세요."
@@ -2456,13 +2504,19 @@ var BILI_STRINGS = {
    "message": "DRM 보호 동영상은 캡처할 수 없습니다: "
   },
   "optDrmDesc": {
-   "message": "Netflix, Disney+, Bilibili 유료 영화 같은 DRM 콘텐츠는 브라우저가 화면을 검게 차단합니다. 이는 업계 공통 제한으로 어떤 확장 프로그램도 우회할 수 없습니다. 일반 Bilibili 동영상(4K 포함)은 영향을 받지 않습니다."
+   "message": "Bilibili의 유료 영화와 애니메이션은 DRM으로 보호되어, 해당 페이지에서는 두 캡처 모드 모두 브라우저가 화면을 검게 가립니다. 이는 업계 공통 제한으로 어떤 확장 프로그램도 우회할 수 없습니다. 일반 Bilibili 동영상은 영향을 받지 않으며, 클린 프레임은 현재 재생 중인 해상도(최대 4K)로 캡처됩니다."
   },
   "optSubsTitle": {
-   "message": "자막: "
+   "message": "자막과 탄막: "
   },
   "optSubsDesc": {
-   "message": "클린 프레임에는 자막이 포함되지 않습니다(자막은 웹페이지가 겹쳐 표시하는 것으로 동영상 화면의 일부가 아닙니다). 자막을 포함하려면 \"보이는 그대로\"를 사용하고 자막을 켠 뒤 전체 화면에서 캡처하세요."
+   "message": "클린 프레임에는 자막도 탄막도 포함되지 않습니다. 둘 다 웹페이지가 동영상 위에 겹쳐 표시하는 것으로 화면의 일부가 아닙니다(동영상 자체에 새겨진 자막은 화면의 일부라서 캡처됩니다). 자막과 탄막을 포함하려면 \"보이는 그대로\"를 사용하세요. 화면에 표시된 크기로 캡처되므로 전체 화면에서 캡처하면 가장 좋은 화질을 얻을 수 있습니다."
+  },
+  "optScopeTitle": {
+   "message": "적용 범위: "
+  },
+  "optScopeDesc": {
+   "message": "이 확장 프로그램은 www.bilibili.com의 동영상 페이지에서만 작동합니다. 라이브 방송(live.bilibili.com)이나 다른 하위 도메인에서는 작동하지 않습니다."
   },
   "optVertical": {
    "message": "세로 영상에서도 캡처할 수 있습니다(세로 원본 해상도)."
@@ -2607,7 +2661,7 @@ var BILI_STRINGS = {
    "message": "Configurações"
   },
   "popupNote": {
-   "message": "Os quadros limpos têm a resolução nativa do vídeo, sem controles do player nem legendas. Para incluir legendas, mude o modo de captura para \"O que você vê\" nas Configurações."
+   "message": "Os quadros limpos são capturados na resolução em reprodução no momento, sem controles do player, legendas ou danmaku. Para incluir legendas ou danmaku, mude o modo de captura para \"O que você vê\" nas Configurações."
   },
   "popupNotBilibiliOpen": {
    "message": "Esta não é uma página do Bilibili. Abra um vídeo primeiro."
@@ -2731,13 +2785,19 @@ var BILI_STRINGS = {
    "message": "Vídeos protegidos por DRM não podem ser capturados: "
   },
   "optDrmDesc": {
-   "message": "em conteúdo com DRM como Netflix, Disney+ e filmes pagos do Bilibili, o navegador escurece a imagem. É uma restrição de todo o setor que nenhuma extensão pode contornar. Vídeos comuns do Bilibili (incluindo 4K) não são afetados."
+   "message": "os filmes e animes pagos da Bilibili são protegidos por DRM; nessas páginas, o navegador escurece a imagem nos dois modos de captura. É uma restrição de todo o setor que nenhuma extensão consegue contornar. Os vídeos comuns da Bilibili não são afetados, e os quadros limpos são capturados na resolução em reprodução no momento, até 4K."
   },
   "optSubsTitle": {
-   "message": "Legendas: "
+   "message": "Legendas e danmaku: "
   },
   "optSubsDesc": {
-   "message": "quadros limpos nunca contêm legendas (elas são sobrepostas pela página da web e não fazem parte da imagem do vídeo). Para incluir legendas, use \"O que você vê\", ative as legendas e capture em tela cheia."
+   "message": "os quadros limpos não contêm legendas nem danmaku — ambos são sobrepostos pela página da web sobre o vídeo e não fazem parte da imagem (legendas gravadas no próprio vídeo fazem parte da imagem e aparecem). Para incluí-los, use \"O que você vê\"; ele captura no tamanho exibido na tela, então capture em tela cheia para obter a melhor qualidade."
+  },
+  "optScopeTitle": {
+   "message": "Escopo: "
+  },
+  "optScopeDesc": {
+   "message": "esta extensão funciona apenas nas páginas de vídeo de www.bilibili.com — não em transmissões ao vivo (live.bilibili.com) nem em outros subdomínios."
   },
   "optVertical": {
    "message": "Vídeos verticais também funcionam (resolução vertical nativa)."
@@ -2882,7 +2942,7 @@ var BILI_STRINGS = {
    "message": "Настройки"
   },
   "popupNote": {
-   "message": "Чистые кадры имеют исходное разрешение видео, без элементов управления плеера и субтитров. Чтобы включить субтитры, переключите режим захвата на «Что вы видите» в Настройках."
+   "message": "Чистые кадры захватываются в текущем разрешении воспроизведения, без элементов управления плеера, субтитров и данмаку. Чтобы включить субтитры или данмаку, переключите режим захвата на «Что вы видите» в Настройках."
   },
   "popupNotBilibiliOpen": {
    "message": "Это не страница Bilibili. Сначала откройте видео."
@@ -3006,13 +3066,19 @@ var BILI_STRINGS = {
    "message": "Видео, защищённое DRM, захватить нельзя: "
   },
   "optDrmDesc": {
-   "message": "для контента с DRM, такого как Netflix, Disney+ и платные фильмы Bilibili, браузер затемняет картинку. Это общеотраслевое ограничение, которое не может обойти ни одно расширение. Обычные видео Bilibili (включая 4K) не затрагиваются."
+   "message": "платные фильмы и аниме на Bilibili защищены DRM; на таких страницах браузер затемняет изображение в обоих режимах захвата. Это отраслевое ограничение, которое не может обойти ни одно расширение. Обычные видео Bilibili не затрагиваются, а чистые кадры захватываются в текущем разрешении воспроизведения, вплоть до 4K."
   },
   "optSubsTitle": {
-   "message": "Субтитры: "
+   "message": "Субтитры и данмаку: "
   },
   "optSubsDesc": {
-   "message": "чистые кадры никогда не содержат субтитров (их накладывает веб-страница, и они не являются частью видеокадра). Чтобы включить субтитры, используйте «Что вы видите», включите субтитры и захватывайте в полноэкранном режиме."
+   "message": "чистые кадры не содержат ни субтитров, ни данмаку — и то и другое веб-страница накладывает поверх видео, и они не являются частью изображения (субтитры, встроенные в само видео, являются частью изображения и отображаются). Чтобы включить их, используйте «Что вы видите»; захват выполняется в размере, показанном на экране, поэтому для лучшего качества захватывайте в полноэкранном режиме."
+  },
+  "optScopeTitle": {
+   "message": "Область действия: "
+  },
+  "optScopeDesc": {
+   "message": "это расширение работает только на страницах видео на www.bilibili.com — не на прямых трансляциях (live.bilibili.com) и не на других поддоменах."
   },
   "optVertical": {
    "message": "Вертикальные видео тоже поддерживаются (исходное вертикальное разрешение)."
@@ -3157,7 +3223,7 @@ var BILI_STRINGS = {
    "message": "การตั้งค่า"
   },
   "popupNote": {
-   "message": "เฟรมแบบคลีนคือความละเอียดต้นฉบับของวิดีโอ ไม่มีปุ่มควบคุมของเครื่องเล่นและไม่มีคำบรรยาย หากต้องการรวมคำบรรยาย ให้เปลี่ยนโหมดการจับภาพเป็น \"สิ่งที่คุณเห็น\" ในการตั้งค่า"
+   "message": "เฟรมแบบคลีนจะจับภาพที่ความละเอียดที่กำลังเล่นอยู่ ไม่มีปุ่มควบคุมของเครื่องเล่น คำบรรยาย หรือแดนมากุ หากต้องการรวมคำบรรยายหรือแดนมากุ ให้เปลี่ยนโหมดการจับภาพเป็น \"สิ่งที่คุณเห็น\" ในการตั้งค่า"
   },
   "popupNotBilibiliOpen": {
    "message": "นี่ไม่ใช่หน้า Bilibili โปรดเปิดวิดีโอก่อน"
@@ -3281,13 +3347,19 @@ var BILI_STRINGS = {
    "message": "วิดีโอที่ป้องกันด้วย DRM จับภาพไม่ได้: "
   },
   "optDrmDesc": {
-   "message": "สำหรับเนื้อหา DRM เช่น Netflix, Disney+ และภาพยนตร์เสียเงินบน Bilibili เบราว์เซอร์จะทำให้ภาพเป็นสีดำ นี่เป็นข้อจำกัดทั่วทั้งอุตสาหกรรมที่ไม่มีส่วนขยายใดเลี่ยงได้ วิดีโอ Bilibili ทั่วไป (รวมถึง 4K) ไม่ได้รับผลกระทบ"
+   "message": "ภาพยนตร์และอนิเมะแบบเสียเงินของ Bilibili มีการป้องกัน DRM ในหน้าเหล่านั้น เบราว์เซอร์จะปิดภาพเป็นสีดำทั้งสองโหมดการจับภาพ นี่เป็นข้อจำกัดทั้งอุตสาหกรรมที่ไม่มีส่วนขยายใดหลีกเลี่ยงได้ วิดีโอ Bilibili ทั่วไปไม่ได้รับผลกระทบ และเฟรมแบบคลีนจะจับภาพที่ความละเอียดที่กำลังเล่นอยู่ สูงสุด 4K"
   },
   "optSubsTitle": {
-   "message": "คำบรรยาย: "
+   "message": "คำบรรยายและแดนมากุ: "
   },
   "optSubsDesc": {
-   "message": "เฟรมแบบคลีนไม่มีคำบรรยายเลย (คำบรรยายถูกซ้อนทับโดยหน้าเว็บและไม่ใช่ส่วนหนึ่งของภาพวิดีโอ) หากต้องการรวมคำบรรยาย ให้ใช้ \"สิ่งที่คุณเห็น\" เปิดคำบรรยาย และจับภาพในโหมดเต็มจอ"
+   "message": "เฟรมแบบคลีนไม่มีคำบรรยายและไม่มีแดนมากุ — ทั้งสองอย่างถูกซ้อนทับโดยหน้าเว็บเหนือวิดีโอและไม่ใช่ส่วนหนึ่งของภาพ (คำบรรยายที่ฝังอยู่ในตัววิดีโอเองเป็นส่วนหนึ่งของภาพและจะปรากฏ) หากต้องการรวมทั้งสองอย่าง ให้ใช้ \"สิ่งที่คุณเห็น\" ซึ่งจะจับภาพตามขนาดที่แสดงบนหน้าจอ ดังนั้นให้จับภาพในโหมดเต็มจอเพื่อคุณภาพที่ดีที่สุด"
+  },
+  "optScopeTitle": {
+   "message": "ขอบเขต: "
+  },
+  "optScopeDesc": {
+   "message": "ส่วนขยายนี้ทำงานเฉพาะบนหน้าวิดีโอของ www.bilibili.com เท่านั้น ไม่ทำงานบนการถ่ายทอดสด (live.bilibili.com) หรือซับโดเมนอื่น"
   },
   "optVertical": {
    "message": "วิดีโอแนวตั้งก็ใช้ได้เช่นกัน (ความละเอียดแนวตั้งต้นฉบับ)"
@@ -3432,7 +3504,7 @@ var BILI_STRINGS = {
    "message": "Cài đặt"
   },
   "popupNote": {
-   "message": "Khung hình sạch có độ phân giải gốc của video, không có điều khiển của trình phát hay phụ đề. Để có cả phụ đề, hãy chuyển chế độ chụp sang \"Những gì bạn thấy\" trong Cài đặt."
+   "message": "Khung hình sạch được chụp ở độ phân giải đang phát, không có điều khiển của trình phát, phụ đề hay danmaku. Để có cả phụ đề hoặc danmaku, hãy chuyển chế độ chụp sang \"Những gì bạn thấy\" trong Cài đặt."
   },
   "popupNotBilibiliOpen": {
    "message": "Đây không phải trang Bilibili. Hãy mở một video trước."
@@ -3556,13 +3628,19 @@ var BILI_STRINGS = {
    "message": "Không thể chụp video được bảo vệ bởi DRM: "
   },
   "optDrmDesc": {
-   "message": "với nội dung DRM như Netflix, Disney+ và phim trả phí trên Bilibili, trình duyệt sẽ làm đen hình ảnh. Đây là giới hạn chung của toàn ngành mà không tiện ích nào vượt qua được. Video Bilibili thông thường (kể cả 4K) không bị ảnh hưởng."
+   "message": "phim và anime trả phí trên Bilibili được bảo vệ bằng DRM; trên các trang đó, trình duyệt sẽ che đen hình ảnh ở cả hai chế độ chụp. Đây là giới hạn chung của toàn ngành mà không tiện ích mở rộng nào vượt qua được. Video Bilibili thông thường không bị ảnh hưởng, và khung hình sạch được chụp ở độ phân giải đang phát, tối đa 4K."
   },
   "optSubsTitle": {
-   "message": "Phụ đề: "
+   "message": "Phụ đề và danmaku: "
   },
   "optSubsDesc": {
-   "message": "khung hình sạch không bao giờ chứa phụ đề (phụ đề do trang web chồng lên và không phải một phần của hình ảnh video). Để có phụ đề, hãy dùng \"Những gì bạn thấy\", bật phụ đề và chụp ở chế độ toàn màn hình."
+   "message": "khung hình sạch không chứa phụ đề cũng không chứa danmaku — cả hai đều do trang web chồng lên trên video và không phải một phần của hình ảnh (phụ đề được ghi cứng vào chính video thì là một phần của hình ảnh và sẽ xuất hiện). Để chụp cả hai, hãy dùng \"Những gì bạn thấy\"; chế độ này chụp theo kích thước hiển thị trên màn hình, nên hãy chụp ở chế độ toàn màn hình để có chất lượng tốt nhất."
+  },
+  "optScopeTitle": {
+   "message": "Phạm vi: "
+  },
+  "optScopeDesc": {
+   "message": "tiện ích này chỉ hoạt động trên các trang video tại www.bilibili.com — không hoạt động trên phát trực tiếp (live.bilibili.com) hay các tên miền phụ khác."
   },
   "optVertical": {
    "message": "Video dọc cũng dùng được (độ phân giải dọc gốc)."
@@ -3707,7 +3785,7 @@ var BILI_STRINGS = {
    "message": "设置"
   },
   "popupNote": {
-   "message": "干净帧是视频原生分辨率、不带控制条和字幕；想要字幕一起截，在设置里把画面模式改成「所见即所得」。"
+   "message": "干净帧按当前播放的清晰度截，不带控制条、字幕和弹幕；想连字幕或弹幕一起截，在设置里把画面模式改成「所见即所得」。"
   },
   "popupNotBilibiliOpen": {
    "message": "当前不是 Bilibili 页面，先打开一个视频再截。"
@@ -3831,13 +3909,19 @@ var BILI_STRINGS = {
    "message": "受 DRM 保护的视频截不了："
   },
   "optDrmDesc": {
-   "message": "Netflix、Disney+、Bilibili 付费电影等带 DRM 的内容，浏览器会把画面挡成黑屏，这是行业统一限制，任何插件都绕不过去。普通 Bilibili 视频（包括 4K）不受影响。"
+   "message": "Bilibili 的付费电影、番剧带 DRM 保护，这类页面上浏览器会把画面挡成黑屏，两种截屏模式都一样；这是行业统一限制，任何插件都绕不过去。普通 Bilibili 视频不受影响，干净帧按当前播放的清晰度截、最高 4K。"
   },
   "optSubsTitle": {
-   "message": "字幕："
+   "message": "字幕和弹幕："
   },
   "optSubsDesc": {
-   "message": "干净帧里本来就不含字幕（字幕是网页叠上去的，不是视频画面的一部分）；要带字幕请用「所见即所得」并把字幕打开、全屏播放时截。"
+   "message": "干净帧里不含字幕、也不含弹幕——两者都是网页叠在视频上面的，不是画面的一部分（视频本身烧录的硬字幕属于画面，会截进去）。想连字幕、弹幕一起截请用「所见即所得」；它按屏幕上显示的大小截，全屏时截效果最好。"
+  },
+  "optScopeTitle": {
+   "message": "适用范围："
+  },
+  "optScopeDesc": {
+   "message": "本插件只在 www.bilibili.com 的视频页工作，不支持直播间（live.bilibili.com）和其他子域名页面。"
   },
   "optVertical": {
    "message": "竖屏视频同样能截（竖屏原生分辨率）。"
@@ -3982,7 +4066,7 @@ var BILI_STRINGS = {
    "message": "設定"
   },
   "popupNote": {
-   "message": "乾淨影格是影片的原始解析度，不含播放器控制項和字幕。要帶字幕，請到設定裡把擷取模式改成「所見即所得」。"
+   "message": "乾淨影格按目前播放的畫質擷取，不含播放器控制項、字幕和彈幕；想連字幕或彈幕一起截，請到設定裡把擷取模式改成「所見即所得」。"
   },
   "popupNotBilibiliOpen": {
    "message": "這不是 Bilibili 頁面，請先打開一個影片。"
@@ -4106,13 +4190,19 @@ var BILI_STRINGS = {
    "message": "受 DRM 保護的影片無法擷取："
   },
   "optDrmDesc": {
-   "message": "Netflix、Disney+、Bilibili 付費電影等 DRM 內容，瀏覽器會把畫面擋成黑屏，這是行業統一限制，任何插件都繞不過去。普通 Bilibili 影片（包括 4K）不受影響。"
+   "message": "Bilibili 的付費電影、番劇帶 DRM 保護，這類頁面上瀏覽器會把畫面擋成黑屏，兩種擷取模式都一樣；這是行業統一限制，任何擴充功能都繞不過去。普通 Bilibili 影片不受影響，乾淨影格按目前播放的畫質擷取、最高 4K。"
   },
   "optSubsTitle": {
-   "message": "字幕："
+   "message": "字幕和彈幕："
   },
   "optSubsDesc": {
-   "message": "乾淨影格裡本來就不含字幕（字幕是網頁疊上去的，不是影片畫面的一部分）；要帶字幕請用「所見即所得」並把字幕打開、全屏播放時截。"
+   "message": "乾淨影格裡不含字幕、也不含彈幕——兩者都是網頁疊在影片上面的，不是畫面的一部分（影片本身燒錄的硬字幕屬於畫面，會截進去）。想連字幕、彈幕一起截請用「所見即所得」；它按螢幕上顯示的大小擷取，全屏時效果最好。"
+  },
+  "optScopeTitle": {
+   "message": "適用範圍："
+  },
+  "optScopeDesc": {
+   "message": "本擴充功能只在 www.bilibili.com 的影片頁面運作，不支援直播間（live.bilibili.com）和其他子網域頁面。"
   },
   "optVertical": {
    "message": "直向影片同樣能截（直向原始解析度）。"

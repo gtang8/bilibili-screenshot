@@ -122,7 +122,7 @@
     "message": "Configurações"
   },
   "popupNote": {
-    "message": "Os quadros limpos têm a resolução nativa do vídeo, sem controles do player nem legendas. Para incluir legendas, mude o modo de captura para \"O que você vê\" nas Configurações."
+    "message": "Os quadros limpos são capturados na resolução em reprodução no momento, sem controles do player, legendas ou danmaku. Para incluir legendas ou danmaku, mude o modo de captura para \"O que você vê\" nas Configurações."
   },
   "popupNotBilibiliOpen": {
     "message": "Esta não é uma página do Bilibili. Abra um vídeo primeiro."
@@ -246,13 +246,19 @@
     "message": "Vídeos protegidos por DRM não podem ser capturados: "
   },
   "optDrmDesc": {
-    "message": "em conteúdo com DRM como Netflix, Disney+ e filmes pagos do Bilibili, o navegador escurece a imagem. É uma restrição de todo o setor que nenhuma extensão pode contornar. Vídeos comuns do Bilibili (incluindo 4K) não são afetados."
+    "message": "os filmes e animes pagos da Bilibili são protegidos por DRM; nessas páginas, o navegador escurece a imagem nos dois modos de captura. É uma restrição de todo o setor que nenhuma extensão consegue contornar. Os vídeos comuns da Bilibili não são afetados, e os quadros limpos são capturados na resolução em reprodução no momento, até 4K."
   },
   "optSubsTitle": {
-    "message": "Legendas: "
+    "message": "Legendas e danmaku: "
   },
   "optSubsDesc": {
-    "message": "quadros limpos nunca contêm legendas (elas são sobrepostas pela página da web e não fazem parte da imagem do vídeo). Para incluir legendas, use \"O que você vê\", ative as legendas e capture em tela cheia."
+    "message": "os quadros limpos não contêm legendas nem danmaku — ambos são sobrepostos pela página da web sobre o vídeo e não fazem parte da imagem (legendas gravadas no próprio vídeo fazem parte da imagem e aparecem). Para incluí-los, use \"O que você vê\"; ele captura no tamanho exibido na tela, então capture em tela cheia para obter a melhor qualidade."
+  },
+  "optScopeTitle": {
+    "message": "Escopo: "
+  },
+  "optScopeDesc": {
+    "message": "esta extensão funciona apenas nas páginas de vídeo de www.bilibili.com — não em transmissões ao vivo (live.bilibili.com) nem em outros subdomínios."
   },
   "optVertical": {
     "message": "Vídeos verticais também funcionam (resolução vertical nativa)."

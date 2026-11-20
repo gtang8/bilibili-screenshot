@@ -122,7 +122,7 @@
     "message": "Cài đặt"
   },
   "popupNote": {
-    "message": "Khung hình sạch có độ phân giải gốc của video, không có điều khiển của trình phát hay phụ đề. Để có cả phụ đề, hãy chuyển chế độ chụp sang \"Những gì bạn thấy\" trong Cài đặt."
+    "message": "Khung hình sạch được chụp ở độ phân giải đang phát, không có điều khiển của trình phát, phụ đề hay danmaku. Để có cả phụ đề hoặc danmaku, hãy chuyển chế độ chụp sang \"Những gì bạn thấy\" trong Cài đặt."
   },
   "popupNotBilibiliOpen": {
     "message": "Đây không phải trang Bilibili. Hãy mở một video trước."
@@ -246,13 +246,19 @@
     "message": "Không thể chụp video được bảo vệ bởi DRM: "
   },
   "optDrmDesc": {
-    "message": "với nội dung DRM như Netflix, Disney+ và phim trả phí trên Bilibili, trình duyệt sẽ làm đen hình ảnh. Đây là giới hạn chung của toàn ngành mà không tiện ích nào vượt qua được. Video Bilibili thông thường (kể cả 4K) không bị ảnh hưởng."
+    "message": "phim và anime trả phí trên Bilibili được bảo vệ bằng DRM; trên các trang đó, trình duyệt sẽ che đen hình ảnh ở cả hai chế độ chụp. Đây là giới hạn chung của toàn ngành mà không tiện ích mở rộng nào vượt qua được. Video Bilibili thông thường không bị ảnh hưởng, và khung hình sạch được chụp ở độ phân giải đang phát, tối đa 4K."
   },
   "optSubsTitle": {
-    "message": "Phụ đề: "
+    "message": "Phụ đề và danmaku: "
   },
   "optSubsDesc": {
-    "message": "khung hình sạch không bao giờ chứa phụ đề (phụ đề do trang web chồng lên và không phải một phần của hình ảnh video). Để có phụ đề, hãy dùng \"Những gì bạn thấy\", bật phụ đề và chụp ở chế độ toàn màn hình."
+    "message": "khung hình sạch không chứa phụ đề cũng không chứa danmaku — cả hai đều do trang web chồng lên trên video và không phải một phần của hình ảnh (phụ đề được ghi cứng vào chính video thì là một phần của hình ảnh và sẽ xuất hiện). Để chụp cả hai, hãy dùng \"Những gì bạn thấy\"; chế độ này chụp theo kích thước hiển thị trên màn hình, nên hãy chụp ở chế độ toàn màn hình để có chất lượng tốt nhất."
+  },
+  "optScopeTitle": {
+    "message": "Phạm vi: "
+  },
+  "optScopeDesc": {
+    "message": "tiện ích này chỉ hoạt động trên các trang video tại www.bilibili.com — không hoạt động trên phát trực tiếp (live.bilibili.com) hay các tên miền phụ khác."
   },
   "optVertical": {
     "message": "Video dọc cũng dùng được (độ phân giải dọc gốc)."

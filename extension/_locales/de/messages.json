@@ -122,7 +122,7 @@
     "message": "Einstellungen"
   },
   "popupNote": {
-    "message": "Saubere Frames haben die native Auflösung des Videos, ohne Player-Steuerung oder Untertitel. Um Untertitel einzubeziehen, stellen Sie den Erfassungsmodus in den Einstellungen auf „Was Sie sehen“ um."
+    "message": "Saubere Frames werden in der gerade abgespielten Auflösung erfasst, ohne Player-Steuerung, Untertitel oder Danmaku. Um Untertitel oder Danmaku einzubeziehen, stellen Sie den Erfassungsmodus in den Einstellungen auf „Was Sie sehen“ um."
   },
   "popupNotBilibiliOpen": {
     "message": "Dies ist keine Bilibili-Seite. Öffnen Sie zuerst ein Video."
@@ -246,13 +246,19 @@
     "message": "DRM-geschützte Videos können nicht erfasst werden: "
   },
   "optDrmDesc": {
-    "message": "Bei DRM-Inhalten wie Netflix, Disney+ und kostenpflichtigen Bilibili-Filmen schwärzt der Browser das Bild. Das ist eine branchenweite Einschränkung, die keine Erweiterung umgehen kann. Normale Bilibili-Videos (einschließlich 4K) sind nicht betroffen."
+    "message": "Bezahlte Filme und Anime auf Bilibili sind DRM-geschützt — auf solchen Seiten schwärzt der Browser das Bild in beiden Erfassungsmodi. Das ist eine branchenweite Einschränkung, die keine Erweiterung umgehen kann. Normale Bilibili-Videos sind nicht betroffen; saubere Frames werden in der gerade abgespielten Auflösung bis zu 4K erfasst."
   },
   "optSubsTitle": {
-    "message": "Untertitel: "
+    "message": "Untertitel und Danmaku: "
   },
   "optSubsDesc": {
-    "message": "Saubere Frames enthalten nie Untertitel (sie werden von der Webseite eingeblendet und sind kein Teil des Videobildes). Um Untertitel einzubeziehen, verwenden Sie „Was Sie sehen“, schalten Sie die Untertitel ein und erfassen Sie im Vollbild."
+    "message": "Saubere Frames enthalten weder Untertitel noch Danmaku — beides wird von der Webseite über das Video gelegt und ist kein Teil des Bildes (fest ins Video eingebrannte Untertitel gehören zum Bild und erscheinen). Um sie einzubeziehen, verwenden Sie „Was Sie sehen“; es erfasst in der auf dem Bildschirm angezeigten Größe, also am besten im Vollbild erfassen."
+  },
+  "optScopeTitle": {
+    "message": "Geltungsbereich: "
+  },
+  "optScopeDesc": {
+    "message": "Diese Erweiterung funktioniert nur auf Videoseiten unter www.bilibili.com — nicht bei Livestreams (live.bilibili.com) oder anderen Subdomains."
   },
   "optVertical": {
     "message": "Vertikale Videos funktionieren ebenfalls (native vertikale Auflösung)."
